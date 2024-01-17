@@ -1,0 +1,5 @@
+rootProject.name = 'java-clean-arc-ddd-tdd-spring-boot'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
