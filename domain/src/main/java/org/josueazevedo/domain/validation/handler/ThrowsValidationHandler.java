@@ -1,6 +1,8 @@
-package org.josueazevedo.domain.validation;
+package org.josueazevedo.domain.validation.handler;
 
 import org.josueazevedo.domain.exceptions.DomainException;
+import org.josueazevedo.domain.validation.Error;
+import org.josueazevedo.domain.validation.ValidationHandler;
 
 import java.util.List;
 

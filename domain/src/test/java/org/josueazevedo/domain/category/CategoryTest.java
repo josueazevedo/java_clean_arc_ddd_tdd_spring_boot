@@ -1,8 +1,7 @@
 package org.josueazevedo.domain.category;
 
-import org.josueazevedo.domain.category.Category;
 import org.josueazevedo.domain.exceptions.DomainException;
-import org.josueazevedo.domain.validation.ThrowsValidationHandler;
+import org.josueazevedo.domain.validation.handler.ThrowsValidationHandler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
