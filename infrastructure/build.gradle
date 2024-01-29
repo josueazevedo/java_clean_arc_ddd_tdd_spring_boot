@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'org.flywaydb:flyway-mysql:8.5.10'
+        classpath 'org.flywaydb:flyway-mysql:10.6.0'
     }
 }
 
@@ -12,14 +12,13 @@ plugins {
     id 'application'
     id 'org.springframework.boot' version '3.2.2'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'org.flywaydb.flyway' version '8.5.10'
+    id 'org.flywaydb.flyway' version '10.6.0'
 }
 
 group = 'org.josueazevedo.infrastructure'
 version = '1.0-SNAPSHOT'
 
 bootJar {
-
     archiveBaseName = 'application.jar'
     destinationDirectory.set(file("${rootProject.buildDir}/libs"))
 }
@@ -33,7 +32,7 @@ dependencies {
     implementation(project(":application"))
     implementation(project(":domain"))
 
-    implementation('mysql:mysql-connector-java')
+    implementation('com.mysql:mysql-connector-j')
 
     implementation('org.springframework.boot:spring-boot-starter-web') {
         exclude module: 'spring-boot-starter-tomcat'
